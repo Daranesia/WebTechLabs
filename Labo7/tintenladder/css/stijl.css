@@ -2,40 +2,78 @@
 
 /* === tokens === */
 :root {
+    size: 32px;
     --color-paper:     hsl(40 30% 97%);
     --hue-ink:           210;
     --color-ink:         hsl(var(--hue-ink) 25% 12%);
     --color-muted:       hsl(var(--hue-ink) 10% 42%);
     --header-font:       Georgia;
-    --header-size:       1.2;
-    --header-lineheight: 1.5rem;
-    --subheader-lineheight: 0.875rem;
+    --header-lineheight:       1.2;
+    --header-size: 1.5rem;
+    --subheader-size: 0.875rem;
     --subheader-padding: 2rem;
     --text-font: Verdana;
     --text-space-left: 1rem;
 }
 
 /* === base === */
+header {
+    background: var(--color-paper);
+    padding-left: var(--text-space-left);
+}
 header h1 {
     font-family: var(--header-font);
     color: var(--color-ink);
-    font-size: var(--header-lineheight);
-    line-height: var(--header-size);
+    font-size: var(--header-size);
+    line-height: var(--header-lineheight);
 }
 header p {
     font-family: var(--header-font);
     color: var(--color-muted);
     font-size: var(--subheader-lineheight);
     padding: var(--subheader-padding);
-    margin-left: var(--text-space-left);
 }
 .trede {
     font-family: var(--text-font);
     color: var(--color-ink);
-    font-size: var(--subheader-lineheight);
+    font-size: var(--subheader-size);
+    height: 5vw;
+    padding: var(--subheader-padding);
 }
 
 /* === the ten steps: one rule per step === */
 .trede:nth-child(1) { 
+    background-color: hsl(var(--hue-ink) 55% 95%); 
+}
+.trede:nth-child(2) { 
+    background-color: hsl(var(--hue-ink) 55% 85%); 
+}
+.trede:nth-child(3) { 
     background-color: hsl(var(--hue-ink) 55% 75%); 
+}
+.trede:nth-child(4) { 
+    background-color: hsl(var(--hue-ink) 55% 65%); 
+}
+.trede:nth-child(5) { 
+    background-color: hsl(var(--hue-ink) 55% 55%); 
+}
+.trede:nth-child(6) { 
+    background-color: hsl(var(--hue-ink) 55% 45%);
+    color: var(--color-paper);
+}
+.trede:nth-child(7) { 
+    background-color: hsl(var(--hue-ink) 55% 35%); 
+    color: var(--color-paper);
+}
+.trede:nth-child(8) { 
+    background-color: hsl(var(--hue-ink) 55% 25%); 
+    color: var(--color-paper);
+}
+.trede:nth-child(9) { 
+    background-color: hsl(var(--hue-ink) 55% 15%); 
+    color: var(--color-paper);
+}
+.trede:nth-child(10) { 
+    background-color: hsl(var(--hue-ink) 55% 5%); 
+    color: var(--color-paper);
 }
