@@ -2,9 +2,37 @@
 
 /* === tokens === */
 :root {
-
+    --color-paper:     hsl(40 30% 97%);
+    --hue-ink:           210;
+    --color-ink:         hsl(var(--hue-ink) 25% 12%);
+    --color-muted:       hsl(var(--hue-ink) 10% 42%);
+    --header-font:       Georgia;
+    --header-size:       1.2;
+    --header-lineheight: 1.5rem;
+    --subheader-lineheight: 0.875rem;
+    --subheader-padding: 2rem;
+    --text-font: Verdana;
+    --text-space-left: 1rem;
 }
 
 /* === base === */
+header h1 {
+    font-family: var(--header-font);
+    color: var(--color-ink);
+    font-size: var(--header-lineheight);
+    line-height: var(--header-size);
+}
+header p {
+    font-family: var(--header-font);
+    color: var(--color-muted);
+    font-size: var(--subheader-lineheight);
+    padding: var(--subheader-padding);
+    margin-left: var(--text-space-left);
+}
+.trede {
+    font-family: var(--text-font);
+    color: var(--color-ink);
+    font-size: var(--subheader-lineheight);
+}
 
 /* === the ten steps: one rule per step === */
