@@ -36,3 +36,6 @@ header p {
 }
 
 /* === the ten steps: one rule per step === */
+.trede:nth-child(1) { 
+    background-color: hsl(var(--hue-ink) 55% 75%); 
+}
